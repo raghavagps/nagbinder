@@ -4,7 +4,8 @@ Prediction of NAG interacting residues
 NAGbinder is a Python-based tool for predicting NAG interacting residues in an uncharacterized protein chain. It involves various prediction models developed using machine learning techniques such as, Support Vector Classifier, Random Forest, Artificial Neural Network, which is implemented using Scikit package. These models are developed using features like (i) Binary Profile of patterns and (ii) Evolutionary Information (PSSM) matrix generated using PSI-BLAST.
 Residues have the score equal or above the selected threshold are said to be “Interacting” whereas residues showing lesser value than the threshold are considered as “Non-Interacting”. Prediction model developed using binary profiles where Random Forest was implemented, performed best in our study.
 
-# ReferenceAn approach for identifying N-acetylglucosamine interacting residues of a protein from its primary sequence. 
+# Reference
+Patiyal et al. (2019) An approach for identifying N-acetylglucosamine interacting residues of a protein from its primary sequence. 
 <a href="https://www.ncbi.nlm.nih.gov/pubmed/31654438"> Protein Sci. 2019 Oct 25. doi:10.1002/pro.3761.</a>
 ## Web Server
 https://webs.iiitd.ac.in/raghava/nagbinder/
