@@ -65,3 +65,39 @@ In our package, we have provided 6 different machine learning models which utili
 - Method '4' is K Nearest Neighbor method developed using binary profile of the pattern as input feature.
 - Method '5' is Support Vector Classifier which utilizes evolutionary information in the form of PSSM profile as an input feature.
 - Method '6' is Random Forest classifier which also utilizes evolutionary information in the form of PSSM profile as an input feature. The PSSM profile is generated using PSI-BLAST by running against the SwissProt database.
+
+NAGbinder – Datasets
+
+NAGbinder provides gold‑standard datasets of NAG ligand‑interacting protein chains derived from the PDB. Standard protocols were used for dataset generation. The datasets are non‑redundant (CD‑HIT at 40% sequence identity) and comprise 231 NAG‑binding protein chains, split into training and validation sets.
+
+Dataset	Protein chains	NAG‑interacting residues	Non‑interacting residues
+Training	186	1,335	47,198
+Validation	45	650	27,733
+Total	231	1,985	74,931
+To facilitate effective use, we provide three dataset types:
+
+Protein chains with interaction annotation
+Patterns of length 9 (binary profiles)
+PSSM profiles of patterns (evolutionary information)
+📁 Dataset Type 1 – Protein chains with interaction annotation
+
+Contains full protein chains where interacting residues are marked with + and non‑interacting residues with -.
+
+Dataset	Description	Files
+Main	186 NAG‑interacting protein chains with residue‑level annotations (+ / -)	[Download]
+Validation	45 NAG‑interacting protein chains with residue‑level annotations (+ / -)	[Download]
+📁 Dataset Type 2 – Patterns (window length 9)
+
+Contains sliding window patterns of length 9 generated from the PDB chains. Positive and negative patterns are provided separately for each chain.
+
+Dataset	Description	Files
+Main	Patterns (window length 9) from 186 NAG‑interacting chains – separate positive/negative pattern files per chain	[Download]
+Validation	Patterns (window length 9) from 45 NAG‑interacting chains – separate positive/negative pattern files per chain	[Download]
+📁 Dataset Type 3 – PSSM profiles of patterns (window length 9)
+
+Contains PSSM (Position‑Specific Scoring Matrix) profiles for each pattern of length 9, generated from the PDB chains. Positive and negative profiles are provided separately for each chain.
+
+Dataset	Description	Files
+Main	PSSM profiles for patterns from 186 NAG‑interacting chains – separate positive/negative profile files per chain	[Download]
+Validation	PSSM profiles for patterns from 45 NAG‑interacting chains – separate positive/negative profile files per chain	[Download]
+
