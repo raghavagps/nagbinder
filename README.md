@@ -7,6 +7,10 @@ Residues have the score equal or above the selected threshold are said to be “
 # Reference
 Patiyal et al. (2020) An approach for identifying N-acetylglucosamine interacting residues of a protein from its primary sequence. 
 <a href="https://www.ncbi.nlm.nih.gov/pubmed/31654438"> Protein Sci. 201-210. doi: 10.1002/pro.3761</a>
+
+# Zenodo
+https://doi.org/10.5281/zenodo.20034155
+
 ## Web Server
 https://webs.iiitd.ac.in/raghava/nagbinder/
 # Installation
